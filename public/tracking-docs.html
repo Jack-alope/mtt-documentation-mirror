@@ -16,14 +16,13 @@
     <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/typicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/toastify.css">
 </head>
 
 <body id="page-top">
     <div id="wrapper">
         <nav class="navbar navbar-dark sticky-top align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="height: 100%;">
-            <div class="container-fluid d-flex flex-column p-0">
-                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.html">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="index.html">
                     <div class="sidebar-brand-text mx-3"><span>Multi Tissue</span>
                         <p>Docs</p>
                     </div>
@@ -32,12 +31,14 @@
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item">
                         <hr>
-                        <h6 class="text-center">Recording</h6><a class="nav-link" href="recording-docs.html#setup"><i class="far fa-building"></i><span>Hardware Setup [Coming]</span></a></li>
+                        <h6 class="text-center">Recording</h6><a class="nav-link" href="recording-docs.html#setup"><i class="far fa-building"></i><span>Hardware Setup [Coming]</span></a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="recording-docs.html#setup"><i class="fab fa-raspberry-pi"></i><span>Pi Setup</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="recording-docs.html#recording"><i class="fas fa-video"></i><span>Recording</span></a></li>
                     <li class="nav-item">
                         <hr>
-                        <h6 class="text-center">Tracking / Analysis</h6><a class="nav-link" href="#setup"><i class="fas fa-tools"></i><span>Setup</span></a></li>
+                        <h6 class="text-center">Tracking / Analysis</h6><a class="nav-link" href="#setup"><i class="fas fa-tools"></i><span>Setup</span></a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#upload"><i class="la la-upload"></i><span>Uploads</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#tracking"><i class="icon-eye"></i><span>Tracking</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#analysis"><i class="icon-graph"></i><span>Analysis</span></a></li>
@@ -62,19 +63,25 @@
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item">
                                 <div class="row">
-                                    <div class="col text-center" style="margin-top: 30px;"><a class="text-primary" href="https://github.com/teammurphy/Multi_Tissue_CAD" target="_blank"><i class="fab fa-github"></i><p>Hardware</p></a></div>
+                                    <div class="col text-center" style="margin-top: 30px;"><a class="text-primary" href="https://github.com/teammurphy/Multi_Tissue_CAD" target="_blank"><i class="fab fa-github"></i>
+                                            <p>Hardware</p>
+                                        </a></div>
                                 </div>
                             </li>
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item">
                                 <div class="row">
-                                    <div class="col text-center" style="margin-top: 30px;"><a class="text-primary" href="https://github.com/teammurphy/Multi_Tissue_Recording" target="_blank"><i class="fab fa-github"></i><p>Recording</p></a></div>
+                                    <div class="col text-center" style="margin-top: 30px;"><a class="text-primary" href="https://github.com/teammurphy/Multi_Tissue_Recording" target="_blank"><i class="fab fa-github"></i>
+                                            <p>Recording</p>
+                                        </a></div>
                                 </div>
                             </li>
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item">
                                 <div class="row">
-                                    <div class="col text-center" style="margin-top: 30px;"><a class="text-primary" href="https://github.com/teammurphy/Multi_Tissue_Tracking" target="_blank"><i class="fab fa-github"></i><p>Tracking</p></a></div>
+                                    <div class="col text-center" style="margin-top: 30px;"><a class="text-primary" href="https://github.com/teammurphy/Multi_Tissue_Tracking" target="_blank"><i class="fab fa-github"></i>
+                                            <p>Tracking</p>
+                                        </a></div>
                                 </div>
                             </li>
                             <div class="d-none d-sm-block topbar-divider"></div>
@@ -100,8 +107,7 @@
                                     <div class="text-right"><button class="btn btn-outline-primary" type="button" onclick="copyfunction(&quot;startup&quot;)"><i class="la la-copy"></i></button></div>
                                     <div class="row">
                                         <div class="col text-left">
-                                            <p id="startup" style="font-family: 'Cutive Mono', monospace;background-color: #f0f0f0;padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;white-space: nowrap;overflow-x: scroll;">#!/bin/bash<br>curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose<br>chmod +x /usr/local/bin/docker-compose<br>wget -P
-                                                ~ https://raw.githubusercontent.com/teammurphy/Multi_Tissue_Tracking/main/docker-compose.yml<br>docker-compose -f ~/docker-compose.yml up -d<br></p><span>Make sure you add the Raspberry Pi's ssh keys. Visit&nbsp;<span style="background-color: #f0f0f0;font-weight: normal;font-family: 'Cutive Mono', monospace;padding-top: 1px;padding-bottom: 1px;">http://ip-of-machine</span></span>
+                                            <p id="startup" style="font-family: 'Cutive Mono', monospace;background-color: #f0f0f0;padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;white-space: nowrap;overflow-x: scroll;">#!/bin/bash<br>curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose<br>chmod +x /usr/local/bin/docker-compose<br>wget -P ~ https://gitlab.com/-/snippets/2055621/raw/master/docker-compose.yml<br>docker-compose -f ~/docker-compose.yml up -d<br></p><span>Make sure you add the Raspberry Pi's ssh keys. Visit&nbsp;<span style="background-color: #f0f0f0;font-weight: normal;font-family: 'Cutive Mono', monospace;padding-top: 1px;padding-bottom: 1px;">http://ip-of-machine</span></span>
                                         </div>
                                     </div>
                                 </div>
@@ -117,8 +123,7 @@
                                     <div>
                                         <p>Update docker-compose:</p>
                                         <p style="font-family: 'Cutive Mono', monospace;background-color: #f0f0f0;padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;white-space: nowrap;overflow-x: scroll;"><button class="btn btn-outline-primary" type="button" onclick="copyfunction(&quot;curl&quot;)"><i class="la la-copy"></i></button><span>&nbsp;$&nbsp;</span><span id="curl">curl -L "https://github.com/docker/compose/releases/download/1.26.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</span></p>
-                                        <p
-                                            style="font-family: 'Cutive Mono', monospace;background-color: #f0f0f0;padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;white-space: nowrap;overflow-x: scroll;"><button class="btn btn-outline-primary" type="button" onclick="copyfunction(&quot;execute&quot;)"><i class="la la-copy"></i></button><span>&nbsp;$&nbsp;</span><span id="execute">chmod +x /usr/local/bin/docker-compose</span></p>
+                                        <p style="font-family: 'Cutive Mono', monospace;background-color: #f0f0f0;padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;white-space: nowrap;overflow-x: scroll;"><button class="btn btn-outline-primary" type="button" onclick="copyfunction(&quot;execute&quot;)"><i class="la la-copy"></i></button><span>&nbsp;$&nbsp;</span><span id="execute">chmod +x /usr/local/bin/docker-compose</span></p>
                                     </div>
                                     <div>
                                         <p>Pull docker-compose.yml:</p>
@@ -153,17 +158,23 @@
                                 <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-4">Guide</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div class="tab-pane active" role="tabpanel" id="tab-3"><video muted="" loop="" autoplay="" width="80%" style="margin-top: 10px;"><source src="https://mtt.murphs.team/assets/img/tracking.mov" type="video/mp4"></video></div>
+                                <div class="tab-pane active" role="tabpanel" id="tab-3"><video muted="" loop="" autoplay="" width="80%" style="margin-top: 10px;">
+                                        <source src="https://mtt.murphs.team/assets/img/tracking.mov" type="video/mp4">
+                                    </video></div>
                                 <div class="tab-pane text-right" role="tabpanel" id="tab-4">
                                     <p></p>
                                     <div>
-                                        <p>Enter calibration distance, submit, and draw bow (black) corresponding to that distance.&nbsp;&nbsp;</p><img src="assets/img/cal.png" width="80%"></div>
+                                        <p>Enter calibration distance, submit, and draw bow (black) corresponding to that distance.&nbsp;&nbsp;</p><img src="assets/img/cal.png" width="80%">
+                                    </div>
                                     <div>
-                                        <p>Draw a box (pink) for each cross section.</p><img src="assets/img/cross.png" width="80%"></div>
+                                        <p>Draw a box (pink) for each cross section.</p><img src="assets/img/cross.png" width="80%">
+                                    </div>
                                     <div>
-                                        <p>Draw a box (red) for the top left post.</p><img src="assets/img/firstpost.png" width="80%"></div>
+                                        <p>Draw a box (red) for the top left post.</p><img src="assets/img/firstpost.png" width="80%">
+                                    </div>
                                     <div>
-                                        <p>Draw a box (red) for the bottom left post.&nbsp;</p><img src="assets/img/secondpost.png" width="80%"></div>
+                                        <p>Draw a box (red) for the bottom left post.&nbsp;</p><img src="assets/img/secondpost.png" width="80%">
+                                    </div>
                                     <div>
                                         <p>Continues towards the right drawing boxes (red) in same fashion for each tissue.&nbsp;</p><img src="assets/img/secondpost.png" width="80%">
                                         <p>Tracking will start automatically once you have drawn the expected number of posts.</p>
@@ -178,9 +189,11 @@
                             <h4 class="text-capitalize text-dark mb-0"><strong>Analysis</strong></h4>
                         </div>
                         <div>
-                            <p>Dashboard: Adjusts graphs in real time based on user input. Points shown are points used for calculations once "Calculate" is clicked.&nbsp;</p><video width="80%" muted="" loop="" autoplay=""><source src="https://mtt.murphs.team/assets/img/rangeslider.mov" type="video/mp4"></video></div>
-                        <div
-                            class="card">
+                            <p>Dashboard: Adjusts graphs in real time based on user input. Points shown are points used for calculations once "Calculate" is clicked.&nbsp;</p><video width="80%" muted="" loop="" autoplay="">
+                                <source src="https://mtt.murphs.team/assets/img/rangeslider.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="card">
                             <div class="card-body">
                                 <p class="card-text"></p>
                                 <div class="table-responsive">
@@ -228,30 +241,33 @@
                                     </table>
                                 </div>
                             </div>
+                        </div>
+                        <hr>
+                    </section>
+                    <section id="calculations">
+                        <div class="d-sm-flex justify-content-between align-items-center mb-4">
+                            <h4 class="text-capitalize text-dark mb-0"><strong>Calculations</strong></h4>
+                        </div>
+                        <div>
+                            <p>Explanations to come</p>
+                        </div>
+                        <hr>
+                    </section>
                 </div>
-                <hr>
-                </section>
-                <section id="calculations">
-                    <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h4 class="text-capitalize text-dark mb-0"><strong>Calculations</strong></h4>
-                    </div>
-                    <div>
-                        <p>Explanations to come</p>
-                    </div>
-                    <hr>
-                </section>
             </div>
-        </div>
-        <footer class="bg-white sticky-footer">
-            <div class="container my-auto">
-                <div class="text-center my-auto copyright"><span>Documentation written and maintained by&nbsp;<a href="https://jack.engineering" target="_blank">Jack F. Murphy</a></span></div>
-            </div>
-        </footer>
-    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+            <footer class="bg-white sticky-footer">
+                <div class="container my-auto">
+                    <div class="text-center my-auto copyright"><span>Documentation written and maintained by&nbsp;<a href="https://jack.engineering" target="_blank">Jack F. Murphy</a></span></div>
+                </div>
+            </footer>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/copy.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="assets/js/script.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/toastify.js"></script>
 </body>
 
 </html>
