@@ -14,5 +14,5 @@ This is a project designed to more efficiently track and analyze multiple contra
 ##### Relevant Repositories:
 
 Documentation: [[Website](https://mtt.mrph.dev)] [[Repository](https://gitlab.com/costa-lab/multi-tissue-tracking/Documentation)]  
-Recording [![Size](https://gitlab.com/costa-lab/multi-tissue-tracking/analysis/badges/main/pipeline.svg)](https://google.com)  : [[Repository](https://gitlab.com/costa-lab/multi-tissue-tracking/recording)]  
-Analysis : [[Repository](https://gitlab.com/costa-lab/multi-tissue-tracking/analysis)]
+Recording: [[Repository](https://gitlab.com/costa-lab/multi-tissue-tracking/recording)]  
+Analysis: [[Repository](https://gitlab.com/costa-lab/multi-tissue-tracking/analysis)]
