@@ -28,7 +28,7 @@
                     </div>
                 </a>
                 <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar">
+                <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item">
                         <hr>
                         <h6 class="text-center">Recording</h6><a class="nav-link" href="recording-docs.html#setup"><i class="far fa-building"></i><span>Hardware Setup [Coming]</span></a>
@@ -59,7 +59,7 @@
                                 </div>
                             </div>
                         </form>
-                        <ul class="nav navbar-nav flex-nowrap ml-auto">
+                        <ul class="navbar-nav flex-nowrap ml-auto">
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item">
                                 <div class="row">
@@ -98,11 +98,11 @@
                         </div>
                         <div class="text-left">
                             <ul class="nav nav-pills nav-fill" role="tablist">
-                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-1">Startup Script</a></li>
-                                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-2">Manual via SSH</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="pill" href="#tab-1">Startup Script</a></li>
+                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="pill" href="#tab-2">Manual via SSH</a></li>
                             </ul>
                             <div class="tab-content">
-                                <div class="tab-pane" role="tabpanel" id="tab-1">
+                                <div class="tab-pane active" role="tabpanel" id="tab-1">
                                     <p style="margin-top: 10px;">Copy and paste this startup script into the 'User Data' section during droplet creation. If that does not work or you are not using digital ocean please follow the manual instructions.&nbsp;&nbsp;</p>
                                     <div class="text-right"><button class="btn btn-outline-primary" type="button" onclick="copyfunction(&quot;startup&quot;)"><i class="la la-copy"></i></button></div>
                                     <div class="row">
@@ -111,7 +111,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane active" role="tabpanel" id="tab-2">
+                                <div class="tab-pane" role="tabpanel" id="tab-2">
                                     <div>
                                         <p>SSH into virtual machine:</p>
                                         <p style="font-family: 'Cutive Mono', monospace;background-color: #f0f0f0;padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;white-space: nowrap;overflow-x: scroll;">$ ssh root@ip-of-virtual-machine</p>
@@ -127,7 +127,7 @@
                                     </div>
                                     <div>
                                         <p>Pull docker-compose.yml:</p>
-                                        <p style="font-family: 'Cutive Mono', monospace;background-color: #f0f0f0;padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;white-space: nowrap;overflow-x: scroll;"><button class="btn btn-outline-primary" type="button" onclick="copyfunction(&quot;pullcompose&quot;)"><i class="la la-copy"></i></button><span>&nbsp;$&nbsp;</span><span id="pullcompose">wget https://gitlab.com/-/snippets/2055621/raw/master/docker-compose.yml</span>&nbsp;<br></p>
+                                        <p style="font-family: 'Cutive Mono', monospace;background-color: #f0f0f0;padding-left: 10px;padding-right: 10px;padding-top: 2px;padding-bottom: 2px;white-space: nowrap;overflow-x: scroll;"><button class="btn btn-outline-primary" type="button" onclick="copyfunction(&quot;pullcompose&quot;)"><i class="la la-copy"></i></button><span>&nbsp;$&nbsp;</span><span id="pullcompose">wget https://raw.githubusercontent.com/Jack-alope/Multi_Tissue_Tracking/main/docker-compose.yml</span>&nbsp;<br></p>
                                     </div>
                                     <div>
                                         <p>Deploy</p>
